@@ -69,3 +69,7 @@ Karena kompleksitasnya kuadratik, Bubble Sort kurang efisien untuk data berukura
    javac BubbleSort.java
 3. Jalankan proram:
 java BubbleSort
+
+
+## Hasil Screenshot
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/eb501b06-d6ef-4eb2-9263-601426ea0595" />
