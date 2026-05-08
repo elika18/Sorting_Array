@@ -1,0 +1,53 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package sorting_array;
+
+/**
+ *
+ * @author elika
+ */
+public class Sorting_Array {
+
+    /**
+     * @param args the command line arguments
+     */
+   public static void main(String[] args) {
+        int[] A = {200, 50, 10, 4, 300, 1};
+        int n = A.length;
+        int temp;
+
+        // ===== ASCENDING =====
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - 1 - i; j++) {
+                if (A[j] > A[j + 1]) {
+                    temp = A[j];
+                    A[j] = A[j + 1];
+                    A[j + 1] = temp;
+                }
+            }
+        }
+
+        System.out.print("Ascending: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(A[i] + " ");
+        }
+
+        // ===== DESCENDING =====
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - 1 - i; j++) {
+                if (A[j] < A[j + 1]) {
+                    temp = A[j];
+                    A[j] = A[j + 1];
+                    A[j + 1] = temp;
+                }
+            }
+        }
+
+        System.out.print("\nDescending: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(A[i] + " ");
+        }
+    }
+}
